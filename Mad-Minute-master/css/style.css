@@ -1,0 +1,118 @@
+ @import url('https://fonts.googleapis.com/css?family=Kanit:400');
+ html,
+ body {
+     height: 100%;
+ }
+ 
+ #pageContainer {
+     min-width: 100%;
+     min-height: 100%;
+     background-image: url(../images/background.jpg);
+     background-size: cover;
+ }
+ 
+ #welcome {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 40px;
+ }
+ 
+ #selection {
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+ }
+ 
+ #selection > h3:hover,
+ #score > h2:hover {
+     color: darkred;
+     cursor: pointer;
+     transition: .33s;
+ }
+ 
+ #selection > h3:active,
+ #score > h2:active {
+     color: blue;
+ }
+ 
+ #game {
+     display: none;
+     flex-direction: column;
+     justify-content: space-around;
+     margin-top: 40px;
+ }
+ 
+ #game > div {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ #rule {
+     width: 90%;
+     height: 5px;
+     margin: auto;
+     background-color: black;
+ }
+ 
+ input[type=text] {
+     background-color: rgba(0, 0, 0, 0);
+     width: 200px;
+     font-size: 12em;
+     text-align: center;
+     border: none;
+     border-bottom: 5px solid black;
+     font-family: 'Kanit', sans-serif;
+     text-shadow: 1px 1px 2px gray;
+ }
+ 
+ input[type=submit] {
+     display: none;
+ }
+ 
+ #score {
+     display: none;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 40px;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4 {
+     font-family: 'Kanit', sans-serif;
+     color: black;
+     text-shadow: 1px 1px 2px gray;
+ }
+ 
+ h1 {
+     font-size: 3.5em;
+ }
+ 
+ h2 {
+     font-size: 2.5em;
+ }
+ 
+ h3 {
+     font-size: 3em;
+ }
+ 
+ h4 {
+     font-size: 12em;
+ }
+ 
+ p {
+     font-family: sans-serif;
+     color: black;
+     text-align: center;
+ }
+ 
+ @media only screen and (max-width: 450px) {
+     h4 {
+         font-size: 8em;
+     }
+     input[type=text] {
+         font-size: 8em;
+     }
+ }
